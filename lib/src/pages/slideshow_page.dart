@@ -45,7 +45,8 @@ class _Dot extends StatelessWidget {
   Widget build(BuildContext context) {
     final pageViewIndex = Provider.of<SliderModel>(context).currentPage;
 
-    return Container(
+    return AnimatedContainer(
+      duration: Duration(milliseconds: 200),
       width: 12,
       height: 12,
       margin: EdgeInsets.symmetric(horizontal: 5),
