@@ -51,7 +51,10 @@ class _Dot extends StatelessWidget {
       height: 12,
       margin: EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
-          color: (pageViewIndex == index) ? Colors.blue : Colors.grey,
+          color: (pageViewIndex >= index - 0.5 &&
+                  pageViewIndex < index + 0.5) //OJO <=
+              ? Colors.blue
+              : Colors.grey,
           shape: BoxShape.circle),
     );
   }
