@@ -9,4 +9,6 @@ class SliderModel with ChangeNotifier {
     this._currentPage = currentPage;
     notifyListeners();
   }
+
+  
 }
